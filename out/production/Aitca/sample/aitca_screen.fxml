@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AitcaScreen">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="124.0" style="-fx-background-color: #0A0C0F;">
+         <children>
+            <Button alignment="TOP_LEFT" layoutY="109.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" styleClass="buttonmenu" stylesheets="@Style.css" text="Issue Asset" />
+            <Button alignment="TOP_LEFT" layoutY="146.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" styleClass="buttonmenu" stylesheets="@Style.css" text="Send Asset" />
+            <Button alignment="TOP_LEFT" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" styleClass="buttonmenu" stylesheets="@Style.css" text="Stream" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="450.0" layoutX="124.0" stroke="TRANSPARENT" strokeType="INSIDE" width="3.0" />
+            <ImageView fx:id="inmainlogo" fitHeight="50.0" fitWidth="58.0" layoutX="27.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="127.0" prefHeight="71.0" prefWidth="575.0" style="-fx-background-color: #0A0C0F;">
+         <children>
+            <Button layoutX="508.0" layoutY="36.0" mnemonicParsing="false" styleClass="buttonmenu" stylesheets="@Style.css" text="Log out" />
+            <Label layoutX="14.0" layoutY="7.0" text="Welecom" textFill="WHITE" />
+            <Label fx:id="emailadd" layoutX="89.0" layoutY="7.0" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="41.0" text="Wallet Address:" textFill="WHITE" />
+            <Label fx:id="walletadd" layoutX="136.0" layoutY="41.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="127.0" layoutY="71.0" prefHeight="380.0" prefWidth="575.0">
+         <children>
+            <AnchorPane fx:id="isseupanel" layoutY="1.0" prefHeight="379.0" prefWidth="412.0" style="-fx-background-color: #0D1E2E;">
+               <children>
+                  <TextField layoutX="157.0" layoutY="62.0" />
+                  <Text fill="WHITE" layoutX="44.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asset Name:" wrappingWidth="89.7294921875" />
+                  <Label layoutX="44.0" layoutY="116.0" text="Amount:" textFill="WHITE" />
+                  <TextField layoutX="157.0" layoutY="111.0" />
+                  <Button layoutX="138.0" layoutY="255.0" mnemonicParsing="false" onAction="#createAsset" prefHeight="25.0" prefWidth="137.0" style="-fx-prompt-text-fill: #fff;" text="Create new asset" />
+                  <CheckBox layoutX="44.0" layoutY="165.0" mnemonicParsing="false" text="Issue An asset to another adderss" textFill="WHITE" />
+                  <JFXTextField focusColor="#1a2a5b" layoutX="46.0" layoutY="205.0" prefHeight="25.0" prefWidth="283.0" promptText="Ex:Azefgfc12315sdduhcdjcd" style="-fx-font-color: #f8f8f8; -fx-text-fill: #f8f8f8;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="412.0" layoutY="1.0" prefHeight="379.0" prefWidth="163.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="14.0" text="Label" />
+                  <ImageView fx:id="refreshissue" fitHeight="18.0" fitWidth="22.0" layoutX="138.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

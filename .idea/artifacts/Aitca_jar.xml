@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Aitca:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Aitca_jar</output-path>
+    <root id="archive" name="Aitca.jar">
+      <element id="module-output" name="Aitca" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/okhttp-3.10.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/okio-1.14.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/tmpfile/jar/jfoenix-9.0.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
